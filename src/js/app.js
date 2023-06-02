@@ -11,7 +11,7 @@ const messages = chat.querySelector('.chat-widget__messages');
 const chatInput = chat.querySelector('.chat-widget__input');
 const loading = document.querySelector('.status-loading');
 const errorHandler = new ErrorHandler(input);
-const baseUrl = 'https://simple-chat-ne4d.onrender.com';
+const baseUrl = 'simple-chat-ne4d.onrender.com';
 const api = new API(`https://${baseUrl}`, modal, input, loading);
 
 api.connection();
