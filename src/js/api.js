@@ -10,7 +10,7 @@ export default class API extends ErrorHandler {
   }
 
   connection() {
-    fetch(`${this.baseUrl}`).then(
+    fetch(`${this.baseUrl}/check`).then(
       () => {
         this.loading.classList.remove('active');
         this.modal.classList.add('active');
